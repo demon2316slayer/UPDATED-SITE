@@ -1,0 +1,421 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for better box model handling */
+}
+
+/* Body and Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* Main font */
+    line-height: 1.6;
+    color: #333; /* Dark gray text for better readability */
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Header and Intro */
+header {
+    
+    min-height: 100px;
+    background-color: #E0F7FA; /* Light teal */
+    padding: 20px; /* Added padding for spacing */
+   
+}
+
+.intro {
+    text-align: center;
+    font-family: 'Roboto', serif; /* Font for headings */
+    color: #00796B; /* Darker teal for the intro text */
+    text-decoration: underline;
+    padding: 10px;
+}
+.tagline {
+    font-size: 1.2em; /* Adjust size as needed */
+    color: #555; /* Change to your preferred color */
+    margin-top: 0.5em; /* Space between the header and tagline */
+    text-align: center; /* Center the text if desired */
+}
+
+
+
+.intro p {
+    font-size: 1.5rem;
+    color: #555; /* Medium gray for paragraph text */
+}
+
+.greeting {
+    font-size: 2rem; /* Adjust font size */
+    color: #003366; /* Change color */
+    margin-top: 10px; /* Add some space above */
+    transition: opacity 0.5s ease-in-out; /* Fade-in effect */
+    opacity: 0; /* Start with invisible */
+}
+
+
+
+/* Navbar */
+.navbar {
+    background-color:  #E0F7FA;/* Consistent with header */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar nav ul a {
+    text-decoration: none;
+    color: #003366; /* Dark blue for links */
+    font-size: 1.5rem;
+    padding: 10px 15px; /* Added padding for better click area */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for hover effects */
+}
+
+.navbar ul li a:hover {
+    color: #E43D12; /* Bright orange on hover */
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/frontend2.jpg') no-repeat center center/cover;
+    color: #E43D12; /* Bright orange for hero text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+/* Brief Section */
+.brief {
+    background-color: #E0F7FA; /* Light teal for continuity */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.brief a {
+    text-decoration: underline;
+    color: #008080; /* Teal */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.brief a:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 128, 128, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.aboutIntro{
+    text-align: center;
+    font-family: 'Roboto', serif; /* Font for headings */
+    color: #00796B; /* Darker teal for the intro text */
+    text-decoration: underline;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+
+#passion{
+    background-color: #E0F7FA;
+    color: #00796B; /* Darker teal for the intro text */
+    padding: 5px;
+    display: flex;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+
+  background: linear-gradient(rgba(224, 247, 250, 0.82), rgba(224, 247, 250, 0.82)), 
+  url('img/codebg.jpg') no-repeat center center/cover;
+color: #00796B; /* Dark teal color for contrast */
+padding: 20px;
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1.2rem;
+line-height: 1.5;
+
+}
+#passion ul li{
+    list-style: none;
+}
+
+#Clink a{
+    text-decoration: underline;
+    color: #008080; /* Teal */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+    
+}
+#Clink a:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 128, 128, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Container{
+    padding: 20px;
+    color: #008080;
+    background-color: #E0F7FA;
+}
+.container h2{
+    font-family: 'Roboto', serif; /* Font for headings */
+}
+
+#contactMain{
+    background-color: #E0F7FA;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(rgba(224, 247, 250, 0.7), rgba(224, 247, 250, 0.7)), 
+   url('img/codebg.jpg') no-repeat center center/cover;
+}
+.form1{
+    
+    margin: 20px auto;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#submit1{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+#submit1:hover{
+    background-color: #45a049;
+}
+
+#contactFooter{
+    text-align: center;
+    padding: 20px;
+    color:#003366;
+    background-color: #E0F7FA;
+   
+}
+.container {
+    max-width: 1200px; /* Adjust to your preference */
+    margin: 0 auto;
+    padding: 20px;
+
+    
+}
+
+.container h2{
+    color: #00796B;
+}
+#pr{
+    background-color: #E0F7FA;
+}
+
+.project {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    margin-bottom: 20px; /* Space between projects */
+}
+
+.project-image {
+    flex: 1; /* Allow the image to take equal space */
+    max-width: 400px; /* Set a max width for images */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 8px; /* Optional: Add some rounding to image corners */
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+.project-image:hover {
+    transform: scale(1.1); /* Zoom in the image on hover */
+    cursor: pointer;
+}
+
+
+.project p {
+    flex: 2; /* Allow text to take up more space */
+    line-height: 1.8; /* Increased line height for readability */
+    font-size: 1.1em; /* Slightly larger font size for easier reading */
+    color: #333; /* Darker color for better contrast */
+    
+}
+.container p{
+    flex: 2; /* Allow text to take up more space */
+    line-height: 1.8; /* Increased line height for readability */
+    font-size: 1.1em; /* Slightly larger font size for easier reading */
+    color: #333; /* Darker color for better contrast */}
+#borderP{
+    border: 2px solid #008080;
+}
+
+.container a{
+    text-decoration: underline;
+    color: #008080; /* Teal */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+    
+}
+.container a:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 128, 128, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.conclusion {
+
+    padding: 20px; /* Padding for inner spacing */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align text */
+}
+
+.conclusion h2 {
+    font-size: 1.5em; /* Larger font size for the heading */
+    color: #00796b; /* Dark teal for heading color */
+}
+
+.conclusion p {
+    line-height: 1.6; /* Improved line height for readability */
+    color: #333; /* Dark text color */
+}
+html {
+    scroll-behavior: smooth;
+}
+.project-image {
+    width: 100%; /* Ensure images scale down */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+/* Loader Styles */
+.loader {
+    border: 8px solid #f3f3f3; /* Light gray background */
+    border-top: 8px solid #3498db; /* Blue color for the spinner */
+    border-radius: 50%; /* Make it round */
+    width: 50px; /* Size of the spinner */
+    height: 50px; /* Size of the spinner */
+    animation: spin 1s linear infinite; /* Spin animation */
+    position: fixed; /* Position it at the center */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    margin-top: -25px; /* Half the height */
+    margin-left: -25px; /* Half the width */
+    z-index: 9999; /* Ensure it appears above other elements */
+}
+
+/* Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+        padding: 0 10px; /* Add padding for smaller screens */
+    }
+
+    #passion{
+        flex-direction: column;
+    }
+
+    .project {
+        flex-direction: column; /* Stack the image and text vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+    .project-image {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    main {
+        display: flex;
+        flex-direction: row; /* Align items in a row on larger screens */
+    }
+}
+/* Media Queries for Small Screens (576px and below) */
+@media (max-width: 576px) {
+    
+    /* Navbar - Adjust font size and padding for links */
+    .navbar nav ul a {
+        font-size: 1.2rem;
+        padding: 8px 10px; /* Reduced padding for better fit */
+    }
+
+    /* Hero Section - Smaller font and padding adjustments */
+    .hero h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+        padding: 0 5px;
+    }
+
+    /* About Intro Heading - Center-align and reduce font size */
+    .aboutIntro h1 {
+        font-size: 1.8rem; /* Adjusted font size */
+        padding: 10px;
+    }
+
+    /* Paragraph text in Main Content */
+    #passion {
+        font-size: 1rem; /* Smaller font size for readability */
+        padding: 10px; /* Add padding to avoid edges */
+        line-height: 1.4; /* Adjust line-height for readability */
+        text-align: left; /* Left-align text on small screens */
+    }
+    
+    /* UL and LI Styling in Skills Section */
+    #passion ul {
+        padding-left: 20px; /* Add some left padding */
+    }
+
+
+   
+
+    /* Make sure images or icons, if any, adjust to small screens */
+    img, .icon {
+        max-width: 100%; /* Ensures images fit within mobile screens */
+        height: auto;
+    }
+    
+    /* Footer (if added) - Center-align and reduce font size */
+    footer {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 10px;
+    }
+}
